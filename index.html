@@ -15,6 +15,35 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">O nas</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Twoja korzyść</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Popularne wycieczki</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Opinie</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Zarezerwuj</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
     <header class="header">
         <div class="header__logo-box">
             <a href="#"> <img src="./img/logo-white.png" alt="white loge like crown" class="header__logo">
@@ -27,7 +56,7 @@
                 <span class="heading-primary--sub">To miejsce gdzie zaczyna się życie</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Odkrywaj!</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Odkrywaj!</a>
         </div>
     </header>
 
@@ -94,7 +123,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text">
                 <h2 class="heading-secondary u-margin-bottom-big">
                     Najbardziej popularne wycieczki
@@ -124,7 +153,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-only">Tylko</p>
                                         <p class="card__price-value u-margin-bottom-big">749zł</p>
-                                        <a href="#" class="btn btn--white">Zarezerwuj</a>
+                                        <a href="#popup" class="btn btn--white">Zarezerwuj</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +183,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-only">Tylko</p>
                                         <p class="card__price-value u-margin-bottom-big">1399zł</p>
-                                        <a href="#" class="btn btn--white">Zarezerwuj</a>
+                                        <a href="#popup" class="btn btn--white">Zarezerwuj</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +196,7 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3"> Odkryj morze na nowo</span>
+                                    <span class="card__heading-span card__heading-span--3">Wycieczka na śniegu</span>
                                 </h4>
                                 <div class="card__details">
                                     <ul>
@@ -184,7 +213,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-only">Tylko</p>
                                         <p class="card__price-value u-margin-bottom-big">1899zł</p>
-                                        <a href="#" class="btn btn--white">Zarezerwuj</a>
+                                        <a href="#popup" class="btn btn--white">Zarezerwuj</a>
                                     </div>
                                 </div>
                             </div>
@@ -197,81 +226,153 @@
                 <a href="#" class="btn btn--green">Zobacz wszystkie wycieczki</a>
             </div>
         </section>
+
+
+        <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="./img/video.mp4" type="video/mp4">
+                    <source src="./img/video.webm" type="viedo/webm">
+                    Your broweser is not supported!
+                </video>
+            </div>
+            <div class="u-center-text">
+                <h2 class="heading-secondary u-margin-bottom-big">
+                    Nasi klienci są zawsze zadowoleni.
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__img" src="./img/nat-8.jpg" alt="">
+                        <figcaption class="story__caption">
+                            Maja Kwiatowa
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Najlepiej spędzony weekend z rozdiną</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis modi odit nihil fugiat qui dolor. Autem, deleniti nobis repellendus optio facere eos suscipit, debitis architecto error in quisquam magnam laboriosam ut sapiente,
+                            aliquid illo dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img class="story__img" src="./img/nat-9.jpg" alt="">
+                        <figcaption class="story__caption">
+                            Jacek Markowski
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Nigdy wcześniej nie byłem taki zrelaksowany!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis modi odit nihil fugiat qui dolor. Autem, deleniti nobis repellendus optio facere eos suscipit, debitis architecto error in quisquam magnam laboriosam ut sapiente,
+                            aliquid illo dignissimos.</p>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-big ">
+                    <a href="#" class="btn btn--green">Czytaj więcej</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+
+                            <div>
+                                <h2 class="heading-secondary u-margin-bottom-medium">
+                                    Zarezerwuj teraz!
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Imię i nazwisko" id="name" required>
+                                <label for="name" class="form__label">Imię i nazwisko</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Adres email" id="email" required>
+                                <label for="email" class="form__label">Adres email</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span> Mała grupa</label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label"><span class="form__radio-button"></span>Duża grupa</label>
+                                </div>
+                            </div>
+
+                            <div class="form__group u-margin-top-medium">
+                                <button class="btn btn--green">rezerwuj &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-    <!-- 
-    <section class="grid-test">
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="./img/logo-green-2x.png" alt="Logo" class="footer__logo">
+        </div>
         <div class="row">
             <div class="col-1-of-2">
-                Col 1 of 2
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Comapny</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Kontakt</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Kariera</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Prywatność</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Nasz zespół</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col-1-of-2">
-                Col 1 of 2
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">Paweł Motyka</a>. Copyright &copy; by Paweł Motyka. You are 100% allowed to use this webpage for both personal and commercial use. Design by Jonas Schmedtmann.
+                </p>
             </div>
         </div>
+    </footer>
 
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img class="popup__img" src="./img/nat-8.jpg" alt="">
+                <img class="popup__img" src="./img/nat-9.jpg" alt="">
             </div>
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                Col 1 of 3
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Zarezerwuj już teraz</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Ważne &ndash; Przeczytaj warunki wzięcia udziału.</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur possimus magnam natus quo, deleniti cum modi? Modi adipisci pariatur necessitatibus ad. Ex, eveniet. Id quis sequi ratione illo optio ex. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Reprehenderit natus sequi animi dolores aliquam! Libero voluptas harum atque ex, voluptatibus magnam? Temporibus, quasi quo quisquam et debitis sunt cupiditate dignissimos.
+                </p>
+                <a href="#" class="btn btn--green">Zarezerwuj</a>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-            <div class="col-2-of-3">
-                Col 2 of 3
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-2-of-4">
-                Col 2 of 4
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-3-of-4">
-                Col 3 of 4
-            </div>
-
-        </div>
-
-    </section> -->
-
-
-
 </body>
 
 </html>

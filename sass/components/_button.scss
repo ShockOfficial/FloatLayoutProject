@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link,
     &:visited {
         position: relative;
@@ -8,6 +9,9 @@
         transition: transform 0.2s, box-shadow 0.2s;
         text-transform: uppercase;
         text-decoration: none;
+        //Change for the <button> 
+        border: none;
+        cursor: pointer;
     }
     &:hover {
         transform: translateY(-0.3rem);
@@ -17,7 +21,9 @@
             opacity: 0;
         }
     }
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-0.1rem);
         box-shadow: 0 1rem 0.8rem rgba(0, 0, 0, .2);
     }
