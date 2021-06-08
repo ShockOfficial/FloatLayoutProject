@@ -1,10 +1,16 @@
 .header {
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to right bottom, #7ed56fda, #28b485dc), url('../img/hero.jpg');
+    background-image: linear-gradient(to right bottom, #7ed56fda, #28b485dc), url('../../img/hero-small.jpg');
     background-position: top;
     background-size: cover;
     clip-path: polygon( 0 0, 100% 0, 100% 75vh, 0 100%);
+    @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+        background-image: linear-gradient(to right bottom, #7ed56fda, #28b485dc), url('../../img/hero.jpg');
+    }
+    @include respond(phone) {
+        clip-path: polygon( 0 0, 100% 0, 100% 85vh, 0 100%);
+    }
     &__logo-box {
         position: absolute;
         top: 4rem;
